@@ -1,0 +1,74 @@
+Sure, here's the user story rearranged to highlight which parts belong to the backend and which to the frontend:
+
+---
+
+**User Story:** As a user, I want to be able to upload and manage my photos in an organized manner, so that I can easily access and share them with others.
+
+**Acceptance Criteria:**
+
+**Backend:**
+
+1. **Upload Photos:**
+   - I can upload multiple photos from my device. 
+     - **Backend:** Use `multer` for handling file uploads.
+     - **Backend:** Implement photo compression for efficient storage.
+   - Photos should be stored securely and accessible only to authorized users.
+     - **Backend:** Implement authentication and authorization (login, logout, auth, reset password).
+
+2. **View and Organize Photos:**
+   - Photos should be sortable by date, album, or tags.
+     - **Backend:** Design photo model/schema with fields for date, album, tags, time created, time updated.
+
+3. **Manage Albums:**
+   - I can create new albums and add photos to existing ones.
+     - **Backend:** Implement logic to handle album creation and photo association.
+   - Albums can be renamed, deleted, or shared with other users.
+     - **Backend:** Implement endpoints for renaming, deleting, and sharing albums.
+
+4. **Search Functionality:**
+   - I can search for photos by date, location, or tags.
+     - **Backend:** Implement search functionality on the server side to filter photos based on query parameters.
+
+5. **Sharing and Collaboration:**
+   - I can share albums or individual photos with other users via email or link.
+     - **Backend:** Implement endpoints for generating shareable links and handling permissions for shared content.
+
+6. **Performance and Scalability:**
+   - The application should handle large volumes of photos efficiently.
+     - **Backend:** Optimize database queries and implement caching where necessary.
+   - Operations like uploading, deleting, and searching should be fast and responsive.
+     - **Backend:** Ensure efficient handling of these operations with optimized code and appropriate indexing in the database.
+
+**Frontend:**
+
+1. **Upload Photos:**
+   - Progress indicators should show the upload status for each photo.
+     - **Frontend:** Implement progress bars for file uploads.
+
+2. **View and Organize Photos:**
+   - I can view thumbnails of all uploaded photos in a grid layout.
+     - **Frontend:** Implement grid and list templates for displaying photo thumbnails.
+   - Clicking on a photo should open a larger view with options to edit metadata or delete the photo.
+     - **Frontend:** Implement modal view for larger photo display with edit and delete options.
+
+3. **Manage Albums:**
+   - Each album should display its cover photo and total number of photos.
+     - **Frontend:** Display cover photo and count of photos in each album.
+
+4. **Search Functionality:**
+   - Search results should update dynamically as I type.
+     - **Frontend:** Implement search bar with dynamic search result updates.
+
+5. **Sharing and Collaboration:**
+   - Shared users should have appropriate permissions to view or edit shared content.
+     - **Frontend:** Implement UI for sharing albums or photos via WhatsApp, email, etc.
+
+6. **Responsive Design:**
+   - The application should be responsive and accessible on both desktop and mobile devices.
+     - **Frontend:** Ensure responsiveness for mobile, tablet, and desktop views.
+   - Photo thumbnails and controls should adjust to different screen sizes.
+     - **Frontend:** Use responsive design techniques (media queries, flexible grids).
+
+---
+
+This organization clarifies which tasks belong to the backend and which to the frontend, ensuring a clear separation of concerns for development.

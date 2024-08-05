@@ -1,0 +1,92 @@
+Sure! Here’s how you can divide the tasks between front-end and back-end developers for each sprint:
+
+### Sprint 1: Basic Photo Upload and Authentication
+
+**Backend Developer:**
+1. **User Authentication:**
+   - Set up routes and controllers for registration, login, logout, and password reset.
+   - Use libraries like `bcrypt` for password hashing and `jsonwebtoken` for token-based authentication.
+
+2. **Photo Upload:**
+   - Set up routes and controllers for handling photo uploads.
+   - Use `multer` for file uploads and implement photo compression.
+   - Store photos securely and associate them with the authenticated user.
+
+**Frontend Developer:**
+1. **User Authentication:**
+   - Create registration, login, and password reset forms.
+   - Implement logic to handle authentication and store tokens.
+
+2. **Photo Upload:**
+   - Create an upload form with a file input and progress indicator.
+   - Implement API calls to upload photos and display upload progress.
+
+### Sprint 2: Photo Viewing and Organization
+
+**Backend Developer:**
+1. **Photo Grid:**
+   - Set up routes and controllers to fetch user's photos.
+   - Implement pagination or infinite scrolling if necessary.
+
+2. **Photo Metadata:**
+   - Update photo model/schema to include metadata fields (date, album, tags).
+   - Implement sorting functionality in the backend.
+
+3. **Photo Details:**
+   - Set up routes and controllers for fetching, updating, and deleting photos.
+
+**Frontend Developer:**
+1. **Photo Grid:**
+   - Create a grid layout to display photo thumbnails.
+   - Implement pagination or infinite scrolling if needed.
+
+2. **Photo Metadata:**
+   - Allow sorting of photos by date, album, or tags.
+   - Display metadata for each photo in the grid.
+
+3. **Photo Details:**
+   - Implement a modal view to display larger photo and metadata.
+   - Add options to edit metadata and delete the photo.
+
+### Sprint 3: Album Management and Search Functionality
+
+**Backend Developer:**
+1. **Manage Albums:**
+   - Set up routes and controllers for creating, renaming, and deleting albums.
+   - Implement logic to add photos to albums.
+   - Fetch album cover photos and photo counts.
+
+2. **Search Functionality:**
+   - Set up search routes and controllers to filter photos based on query parameters.
+
+**Frontend Developer:**
+1. **Manage Albums:**
+   - Create UI components to create, rename, and delete albums.
+   - Allow users to add photos to albums.
+   - Display album cover photos and photo counts.
+
+2. **Search Functionality:**
+   - Implement a search bar to filter photos by date, location, or tags.
+   - Display search results dynamically as the user types.
+
+### Summary
+
+**Backend Developer Responsibilities:**
+- User authentication (routes, controllers, authentication logic).
+- Photo upload (routes, controllers, file handling, compression).
+- Fetching and organizing photos (routes, controllers, pagination, sorting).
+- Managing photo metadata (routes, controllers, updating, deleting).
+- Album management (routes, controllers, logic for creating, renaming, deleting albums, adding photos to albums).
+- Implementing search functionality (routes, controllers for filtering photos).
+
+**Frontend Developer Responsibilities:**
+- Creating and styling forms for registration, login, password reset.
+- Handling authentication logic and storing tokens.
+- Creating and styling photo upload form with progress indicator.
+- Implementing photo grid layout and handling pagination/infinite scrolling.
+- Implementing sorting and displaying photo metadata.
+- Creating modal view for detailed photo display with edit/delete options.
+- Creating UI components for album management (create, rename, delete, add photos).
+- Implementing search bar and dynamically displaying search results.
+
+By dividing the tasks this way, both the front-end and back-end developers can work in parallel, ensuring efficient progress towards the MVP.

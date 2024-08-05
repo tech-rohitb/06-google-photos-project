@@ -1,0 +1,44 @@
+Sure, here's a sample user story for a Google Photos-like application in React:
+
+---
+
+**User Story:** As a user, I want to be able to upload and manage my photos in an organized manner, so that I can easily access and share them with others.
+
+**Acceptance Criteria:**
+1. **Upload Photos:**
+   - I can upload multiple photos from my device. (multer) + compression
+
+   - Progress indicators should show the upload status for each photo. (progress bar)
+
+   - Photos should be stored securely and accessible only to authorized users. (login , logout, auth) (reset password)
+
+2. **View and Organize Photos:**
+   - I can view thumbnails of all uploaded photos in a grid layout. (grid and list templates)
+   - Photos should be sortable by date, album, or tags. (model - photo - date, album, tag, time created, time updated)
+   - Clicking on a photo should open a larger view with options to edit metadata or delete the photo. (modal view of photo, exit on click)
+
+3. **Manage Albums:**
+   - I can create new albums and add photos to existing ones. (frontend, filter ??) ** X
+
+   - Each album should display its cover photo and total number of photos. (count of objects)
+   - Albums can be renamed, deleted, or shared with other users.
+
+4. **Search Functionality:**
+   - I can search for photos by date, location, or tags. (search bar)
+   - Search results should update dynamically as I type.
+
+5. **Sharing and Collaboration:**
+   - I can share albums or individual photos with other users via email or link. (on click share to whatsapp, email)
+   - Shared users should have appropriate permissions to view or edit shared content. X
+
+6. **Responsive Design:**
+   - The application should be responsive and accessible on both desktop and mobile devices. (mobile, tab, desktop)
+   - Photo thumbnails and controls should adjust to different screen sizes. ?
+
+7. **Performance and Scalability:**
+   - The application should handle large volumes of photos efficiently. (additional)
+   - Operations like uploading, deleting, and searching should be fast and responsive. (additional)
+
+---
+
+This user story outlines the main features and requirements for a Google Photos-like application in React, focusing on functionality, usability, and performance.
